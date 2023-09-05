@@ -1,10 +1,12 @@
 /*formatação geral*/
 body{
+    background-color: #657984;
     font-family: Cookie, cursive;
 }
 html{
     scroll-behavior: smooth;
 }
+
 h1, h2, h3{
     margin: 0;
     font-family: Yellowtail, cursive;
@@ -17,15 +19,15 @@ p{
 /*cabeçalho*/
 .logo img{
     width: 50%;
-    border-radius: 50%;
+    padding-left: 25px;
 }
-nav{ 
+nav { 
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #9bf6ff;
+    background-color: #081012;
     padding: 10px;
-    border-bottom: solid 2px #009dac;
+    border-bottom: solid 2px #D5FB00;
 }
 nav ul{
     list-style: none;
@@ -46,20 +48,20 @@ nav ul li a{
     padding: 10px 0;
     width: 100%;
     text-decoration: none;
-    color: #6e78ff;
+    color: #b6dac5;
 }
 ul:hover li:hover a:hover{
-color: #eb5e28;
+color: #D5FB00;
 }
 /*fim formatação cabeçalho*/
 /*header*/
 header{
     background-attachment: fixed;
-    background-image: url(../img/wallpaperflare.com_wallpaper\ \(2\).jpg);
+    background-image: url(../img/wallpaper.jpg);
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
-    color: #219ebc;
+    color: #D5FB00;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,49 +79,59 @@ header p{
     color: aliceblue;
     text-decoration: none;
     padding: 10px 30px;
-    background-color: #4ccaf070;
+    background-color: #081012;
     border-radius: 30px;
     font-size: 1.5em;
     transition: background 2s; 
 }
 .botao:hover{
-    color: #4cc9f0;
-    background-color: rgb(240, 248, 255);
+    color: #D5FB00;
+    background-color: #4D8FC3;
 }
 /*fim header*/
 /*container*/
 .container{
+    border-top: solid 2px #D5FB00;
     width: 100%;
     height: 580px;
 }
 /*sobre*/
 #sobre{
+    margin-bottom: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #48bfe3;
+    background-color: #081012;
     color: #6e78ff;
 }
 h2{
     margin-top: 20px;
     font-size: 2em;
 }
-.foto{
-    width: 80%;
-}
-.foto{
-    float: left;
-    width: 50%;
+
+#foto-responsiva{
+    border: 1px solid #D5FB00;
+    border-radius: 15px;
+        width: 0%;
+        width: 50%; 
+    
 }
 .texto{
     float: right;
     width: 50%;
     font-size: 30px;
 }
+
+.texto p{
+    margin-bottom: 10%;
+}
 /*fim sobre*/
 /*habilidades*/
 #especialidades{
+    border: solid 1px;
+    border-radius: 15px;
+    background-color: #414e55;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -148,6 +160,7 @@ h2{
 /*fim habilidades*/
 /*competências*/
 #competencias{
+    background-color: #657984;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,7 +208,7 @@ h2{
 }
 /*fim competências*/
 /*canal*/
-#canal{
+#preço{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,22 +216,33 @@ h2{
     margin-left: 20px;
     margin-right: 20px;
     width: 100%;
+    padding-bottom: 50px;
 }
-#canal h2{
+#preço h2{
     margin-bottom: 20px;
     margin-top: 10px;
     font-size: 2em;
     text-align: center;
 }
-.canal{
+.preço{
     width: 80%;
     align-items: center;
     text-align: center;
 }
-.canal h3{
+.preço h1{
     font-size: 1.5em;
     margin-top: 30px;
     margin-bottom: 14px;
+}
+#preço a{
+    text-decoration: none;
+    font-weight: 1em;
+    font-size: 1.2em;
+    color: #D5FB00;
+}
+#preço a:hover{
+    color: aqua;
+    text-decoration: underline;
 }
 /*fim canal*/
 /*fim container*/
@@ -229,7 +253,7 @@ h2{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #e2eafc;
+    background-color: #414e55;
     width: 100%;
 }
 #contato h2{
@@ -242,18 +266,21 @@ h2{
     color: #eb5e28;
 }
 #contato h2:hover{
-    color: #004b23;
+    color: #D5FB00;
+    border-radius: 15px;
     cursor:pointer;
 }
 #contato > p{
     margin-bottom: 20px;
     font-size: 1.5em;
-    color: #004b23;
+    color: #D5FB00;
+    border-radius: 15px;
     text-align: center;
 }
 #contato a{
     text-decoration: none;
-    color: #3d348b;
+    color: #D5FB00;
+    border-radius: 15px;
     text-align: center;
     font-size: 1.2em;
     /*font-family:*/
@@ -264,8 +291,8 @@ h2{
 footer{
     text-align: center;
     width: 100%;
-    background-color:#9bf6ff;
-    color:black;
+    background-color:#081012;
+    color:#D5FB00;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -361,6 +388,11 @@ footer{
    /*fim contato*/
 #sobre{
     height: 690px;
+}
+
+.texto p{
+    margin-right: 10%;
+    text-align: justify;
 }
 }
 /*fim responsividade*/
